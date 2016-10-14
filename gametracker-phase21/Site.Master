@@ -1,0 +1,89 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="gametracker_phase21.Site" %>
+
+<!DOCTYPE html>
+<!--Author: Jing Zhou & Hinaben Patel-->
+<!--Date : 07/10/2016-->
+<!--Project Name: Game Tracker-->
+<!--Description: Template of Site master-->
+<html>
+<head runat="server">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <!-- CSS Section -->
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="Content/font-awesome.min.css" rel="stylesheet" />
+    <link href="Content/app.css" rel="stylesheet" />
+    <link href="fonts/stylesheet.css" rel="stylesheet" />
+
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <!-- Main Navigation -->
+        <nav class="navbar" >
+          
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+               </div>    
+                 
+            
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li id="home" runat="server"><a href="Default.aspx"><i class="fa fa-home fa-lg"></i>Home</a></li>
+                        <li id="signin" runat="server"><a href="signin.aspx"><i class="fa fa-th fa-lg"></i>Sign in</a></li>
+                        <li id="signup" runat="server"><a href="signup.aspx"><i class="fa fa-gear fa-lg"></i>Sign up</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modify Data<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="update.aspx">Update</a></li>
+                                <li><a href="insert.aspx">Add</a></li>
+                                <li><a href="delete.aspx">Delete</a></li>              
+                            </ul>
+                        </li>
+
+
+
+
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+               
+            <!-- /.container-fluid -->
+        </nav>
+        <!-- Main Content -->
+        <main>
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </main>
+    </form>
+
+    <!-- Footer -->
+    <nav class="navbar navbar-default navbar-fixed-bottom" style="border:hidden">
+        <div class="container text-primary">
+            <h4 >&copy; 2016 - Game tracker-Jing Zhou -Hinaben Patel  </h4>
+           
+
+
+        </div>
+    </nav>
+
+    <!-- Scripts Section -->
+    <script src="Scripts/jquery-2.2.4.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/app.js"></script>
+</body>
+</html>
