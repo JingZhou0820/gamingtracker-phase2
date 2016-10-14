@@ -79,6 +79,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\images\background.jpg" />
     <Content Include="Assets\images\leftarrow.png" />
     <Content Include="Assets\images\rightArrow.png" />
     <Content Include="Content\Action_Man-demo.html" />
